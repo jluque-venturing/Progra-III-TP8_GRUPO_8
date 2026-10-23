@@ -53,7 +53,7 @@
                     <td aria-grabbed="false" aria-orientation="horizontal" class="auto-style4">
 
             <asp:HyperLink ID="hlEliminar" runat="server"
-                NavigateUrl="~/Vistas/EliminarSucursal.aspx" Font-Strikeout="False">
+                NavigateUrl="~/Vistas/EliminarSucursales.aspx" Font-Strikeout="False">
                 Eliminar Sucursal
             </asp:HyperLink>
 
