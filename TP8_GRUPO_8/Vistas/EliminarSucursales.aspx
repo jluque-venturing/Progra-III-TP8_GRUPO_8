@@ -52,6 +52,8 @@
                 </tr>
             </table>
             <h2>Eliminar Sucursales</h2>
+            <asp:Label ID="Label1" runat="server" Text="Ingresar ID sucursal"></asp:Label>
+            <asp:TextBox ID="txtIdSucursal" runat="server" OnTextChanged="txtIdSucursal_TextChanged"></asp:TextBox>
             <br /><br />
         </div>
     </form>
