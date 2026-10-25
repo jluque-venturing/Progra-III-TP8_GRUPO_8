@@ -56,7 +56,29 @@
                         <asp:Label ID="Label1" runat="server" Text="Ingresar ID sucursal"></asp:Label>
                     </td>
                     <td class="auto-style3">
-                        <asp:TextBox ID="txtIdSucursal" runat="server" OnTextChanged="txtIdSucursal_TextChanged" Width="189px"></asp:TextBox>
+                        <asp:TextBox ID="txtIdSucursal" runat="server"></asp:TextBox>
+
+                        <asp:RequiredFieldValidator
+                            ID="rfvIdSucursal"
+                            runat="server"
+                            ControlToValidate="txtIdSucursal"
+                            ErrorMessage="Debe ingresar un ID."
+                            Display="None">
+                        </asp:RequiredFieldValidator>
+
+                        <asp:RegularExpressionValidator
+                            ID="revIdSucursal"
+                            runat="server"
+                            ControlToValidate="txtIdSucursal"
+                            ValidationExpression="^\d+$"
+                            ErrorMessage="Solo se permiten números."
+                            Display="None">
+                        </asp:RegularExpressionValidator>
+
+                        <asp:ValidationSummary
+                            ID="vsErrores"
+                            runat="server"
+                            ForeColor="Red" />
                     </td>
                     <td>
                         <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" Width="103px" />

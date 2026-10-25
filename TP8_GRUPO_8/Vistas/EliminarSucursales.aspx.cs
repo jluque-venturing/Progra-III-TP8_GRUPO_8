@@ -11,6 +11,7 @@ namespace TP8_GRUPO_8.Vistas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
             if (!IsPostBack)
             {
                 
@@ -24,7 +25,8 @@ namespace TP8_GRUPO_8.Vistas
 
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
-
+            if (!Page.IsValid)
+                return;
         }
     }
 }
