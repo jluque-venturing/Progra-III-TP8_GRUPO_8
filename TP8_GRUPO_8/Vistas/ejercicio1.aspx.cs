@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Negocio;
 
 namespace TP8_GRUPO_8
 {
@@ -13,7 +14,11 @@ namespace TP8_GRUPO_8
 		{
             if (!IsPostBack)
             {
-
+                ddlProvincia.DataSource = new NegocioProvincia().getTabla();
+                ddlProvincia.DataTextField = "DescripcionProvincia";
+                ddlProvincia.DataValueField = "Id_Provincia";
+                ddlProvincia.DataBind();
+                ddlProvincia.Items.Insert(0, new ListItem("--Seleccionar--", "0"));
             }
         }
 

@@ -5,18 +5,23 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Agregar Sucursal</title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 284px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <table>
+        <table style="width: 1338px">
             <tr>
-                <td>
+                <td style="text-align: center; vertical-align: middle">
                     <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Vistas/ejercicio1.aspx">Agregar Sucursal</asp:HyperLink>
                 </td>
-                <td>
+                <td style="text-align: center; vertical-align: middle">
                     <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Vistas/ListadoSucursales.aspx">Listado de Sucursales</asp:HyperLink>
                 </td>
-                <td>
+                <td style="text-align: center; vertical-align: middle">
                     <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Vistas/EliminarSucursales.aspx">Eliminar Sucursal</asp:HyperLink>
                 </td>
             </tr>
