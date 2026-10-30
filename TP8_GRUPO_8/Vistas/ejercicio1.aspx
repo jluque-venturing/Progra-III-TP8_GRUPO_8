@@ -6,8 +6,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Agregar Sucursal</title>
     <style type="text/css">
-        .auto-style1 {
-            width: 284px;
+        .auto-style2 {
+            width: 169px;
         }
     </style>
 </head>
@@ -38,6 +38,13 @@
                 <td>
                     <asp:TextBox ID="txtNombreSucursal" runat="server"></asp:TextBox>
                 </td>
+                <td class="auto-style2">
+
+
+                    <asp:RequiredFieldValidator ID="rfvTxtNombreSucursal" runat="server" ControlToValidate="txtNombreSucursal" ErrorMessage="Ingrese nombre de la sucursal" ForeColor="Red"></asp:RequiredFieldValidator>
+
+
+                </td>
             </tr>
             <tr>
                 <td>
@@ -45,6 +52,13 @@
                 </td>
                 <td>
                     <asp:TextBox ID="txtDescripcion" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style2">
+
+
+                    <asp:RequiredFieldValidator ID="rfvTxtDescripcion" runat="server" ControlToValidate="txtDescripcion" ErrorMessage="Ingrese un descripcion" ForeColor="Red"></asp:RequiredFieldValidator>
+
+
                 </td>
             </tr>
             <tr>
@@ -56,6 +70,13 @@
                         <asp:ListItem Text="--Seleccionar--" Value=""></asp:ListItem>
                     </asp:DropDownList>
                 </td>
+                <td class="auto-style2">
+
+
+                    <asp:RequiredFieldValidator ID="rfvDdlProvincia" runat="server" ControlToValidate="ddlProvincia" ErrorMessage="Seleccione una provincia" ForeColor="Red" InitialValue="0">Seleccione una provincia</asp:RequiredFieldValidator>
+
+
+                </td>
             </tr>
             <tr>
                 <td>
@@ -63,6 +84,13 @@
                 </td>
                 <td>
                     <asp:TextBox ID="txtDireccion" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style2">
+
+
+                    <asp:RequiredFieldValidator ID="rfvTxtDireccion" runat="server" ControlToValidate="txtDireccion" ErrorMessage="Ingrese una direccion" ForeColor="Red"></asp:RequiredFieldValidator>
+
+
                 </td>
             </tr>
             <tr>

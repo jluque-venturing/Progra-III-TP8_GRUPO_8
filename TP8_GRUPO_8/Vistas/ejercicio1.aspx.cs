@@ -24,7 +24,12 @@ namespace TP8_GRUPO_8
 
         protected void btnAceptar_Click(object sender, EventArgs e) 
         {
-            
+           if (!Page.IsValid)
+            {
+
+                return;
+
+            } 
         }
     }
 }

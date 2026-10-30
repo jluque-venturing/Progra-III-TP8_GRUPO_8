@@ -69,6 +69,15 @@ namespace TP8_GRUPO_8
         protected global::System.Web.UI.WebControls.TextBox txtNombreSucursal;
 
         /// <summary>
+        /// Control rfvTxtNombreSucursal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTxtNombreSucursal;
+
+        /// <summary>
         /// Control lblDescripcion.
         /// </summary>
         /// <remarks>
@@ -85,6 +94,15 @@ namespace TP8_GRUPO_8
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDescripcion;
+
+        /// <summary>
+        /// Control rfvTxtDescripcion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTxtDescripcion;
 
         /// <summary>
         /// Control lblProvincia.
@@ -105,6 +123,15 @@ namespace TP8_GRUPO_8
         protected global::System.Web.UI.WebControls.DropDownList ddlProvincia;
 
         /// <summary>
+        /// Control rfvDdlProvincia.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvDdlProvincia;
+
+        /// <summary>
         /// Control lblDireccion.
         /// </summary>
         /// <remarks>
@@ -121,6 +148,15 @@ namespace TP8_GRUPO_8
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDireccion;
+
+        /// <summary>
+        /// Control rfvTxtDireccion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTxtDireccion;
 
         /// <summary>
         /// Control btnAceptar.
