@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Negocio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -27,6 +28,22 @@ namespace TP8_GRUPO_8.Vistas
         {
             if (!Page.IsValid)
                 return;
+
+
+            int id = int.Parse(txtIdSucursal.Text);
+
+            NegocioSucursal negocio = new NegocioSucursal();
+
+            bool eliminado = negocio.eliminarSucursal(id);
+
+            if (eliminado)
+            {
+                lblMensaje.Text = "La sucursal se ha eliminado con éxito";
+            }
+            else
+            {
+                lblMensaje.Text = "No existe una sucursal con ese ID";
+            }
         }
     }
 }
