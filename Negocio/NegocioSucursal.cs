@@ -1,4 +1,5 @@
-﻿using Dao;
+﻿using System.Data;
+using Dao;
 using Entidades;
 
 
@@ -6,6 +7,12 @@ namespace Negocio
 {
     public class NegocioSucursal
     {
+        public DataTable getTabla()
+        {
+            DaoSucursal dao = new DaoSucursal();
+            return dao.getTablaSucursales();
+        }
+
         public bool eliminarSucursal(int id)
         {
             Sucursal sucursal = new Sucursal();

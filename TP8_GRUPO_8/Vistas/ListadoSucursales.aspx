@@ -36,7 +36,7 @@
 
             <table class="auto-style1">
                 <tr>
-                    <td aria-grabbed="false" aria-orientation="horizontal" class="auto-style5">
+                    <td aria-grabbed="false" aria-orientation="horizontal" style="text-align: center; vertical-align: middle">
 
                         <asp:HyperLink ID="hlAgregar" runat="server"
                             NavigateUrl="~/Vistas/ejercicio1.aspx">
@@ -44,7 +44,7 @@
                         </asp:HyperLink>
 
                     </td>
-                    <td aria-grabbed="false" aria-orientation="horizontal" class="auto-style6">
+                    <td aria-grabbed="false" aria-orientation="horizontal" style="text-align: center; vertical-align: middle">
 
                         <asp:HyperLink ID="hlListado" runat="server"
                             NavigateUrl="~/Vistas/ListadoSucursales.aspx">
@@ -52,7 +52,7 @@
                         </asp:HyperLink>
 
                     </td>
-                    <td aria-grabbed="false" aria-orientation="horizontal" class="auto-style4">
+                    <td aria-grabbed="false" aria-orientation="horizontal" style="text-align: center; vertical-align: middle">
 
                         <asp:HyperLink ID="hlEliminar" runat="server"
                             NavigateUrl="~/Vistas/EliminarSucursales.aspx" Font-Strikeout="False">
@@ -71,6 +71,9 @@
             <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" OnClick="btnFiltrar_Click" />
             <asp:Button ID="btnMostrarTodos" runat="server" Text="Mostrar todos" OnClick="btnMostrarTodos_Click" />
             <br />
+            <br />
+            <asp:GridView ID="gvSucursales" runat="server">
+            </asp:GridView>
 
         </div>
     </form>
