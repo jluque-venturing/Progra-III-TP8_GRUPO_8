@@ -36,6 +36,14 @@ namespace Negocio
             }
 
         }
+        public DataTable getTablaFiltrada(int id)
+        {
+            Sucursal suc = new Sucursal();
+            suc.setIdSucursal(id);
 
+            DaoSucursal dao = new DaoSucursal();
+
+            return dao.getTablaSucursal(suc);
+        }
     }
 }
