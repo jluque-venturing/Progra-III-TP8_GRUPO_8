@@ -45,5 +45,20 @@ namespace Dao
             ArmarParametrosSucursalAgregar(ref comando, suc);
             return ds.EjecutarProcedimientoAlmacenado(comando, "spAgregarSucursal");
         }
+
+        public DataTable getTablaSucursales()
+        {
+            string consulta = "SELECT " +
+                "S.Id_Sucursal AS Id_Sucursal, " +
+                "S.NombreSucursal AS Nombre, " +
+                "S.DescripcionSucursal AS Descripcion, " +
+                "P.DescripcionProvincia AS Provincia, " +
+                "S.DireccionSucursal AS Direccion " +
+                "FROM Sucursal AS S " +
+                "INNER JOIN Provincia AS P " +
+                "ON S.Id_ProvinciaSucursal = P.Id_Provincia";
+
+            return ds.ObtenerTabla("Sucursal", consulta);
+        }
     }
 }
