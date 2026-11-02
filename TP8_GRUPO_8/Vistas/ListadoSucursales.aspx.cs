@@ -23,7 +23,7 @@ namespace TP8_GRUPO_8.Vistas
 
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
-
+            if (!Page.IsValid) return;
         }
 
         protected void btnMostrarTodos_Click(object sender, EventArgs e)

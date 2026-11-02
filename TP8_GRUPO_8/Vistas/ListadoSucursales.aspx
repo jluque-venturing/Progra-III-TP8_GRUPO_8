@@ -67,9 +67,11 @@
 
             <br />
             <asp:Label ID="Label1" runat="server" Text="Busqueda ingrese Id sucursal:"></asp:Label>
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtIdSucursal" runat="server"></asp:TextBox>
             <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" OnClick="btnFiltrar_Click" />
             <asp:Button ID="btnMostrarTodos" runat="server" Text="Mostrar todos" OnClick="btnMostrarTodos_Click" />
+            <asp:RequiredFieldValidator ID="rfvIdSucursal" runat="server" ControlToValidate="txtIdSucursal" ErrorMessage="Ingrese un ID de sucursal" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="revIdSucursal" runat="server" ControlToValidate="txtIdSucursal" ErrorMessage="Solo se pueden ingresar números" ForeColor="Red" Display="Dynamic" ValidationExpression="^\d+$"></asp:RegularExpressionValidator>
             <br />
             <br />
             <asp:GridView ID="gvSucursales" runat="server">
