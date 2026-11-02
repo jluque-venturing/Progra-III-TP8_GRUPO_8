@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Entidades;
+using Negocio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Negocio;
 
 namespace TP8_GRUPO_8
 {
@@ -29,7 +30,28 @@ namespace TP8_GRUPO_8
 
                 return;
 
-            } 
+            }
+
+            Sucursal suc = new Sucursal();
+
+            suc.setNombreSucursal(txtNombreSucursal.Text);
+            suc.setDescripcionSucursal(txtDescripcion.Text);
+            suc.setDireccionSucursal(txtDireccion.Text);
+            suc.setIdProvinciaSucursal(int.Parse(ddlProvincia.SelectedValue));
+
+            NegocioSucursal neg = new NegocioSucursal();
+
+            if (neg.agregarSucursal(suc))
+            {
+                lblMensaje.Text = "La sucursal se ha agregado con exito";
+
+            }
+
+            else
+            {
+
+                lblMensaje.Text = "No se pudo agregar la sucursal";
+            }
         }
     }
 }

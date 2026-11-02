@@ -45,5 +45,22 @@ namespace Negocio
 
             return dao.getTablaSucursal(suc);
         }
+
+        public bool agregarSucursal(Sucursal suc)
+        {
+            DaoSucursal dao = new DaoSucursal();
+
+            int filasAfectadas = dao.agregarSucursal(suc);
+
+            if (filasAfectadas == 1)
+            {
+                return true;
+            }
+
+            else
+            {
+                return false;
+            }
+        }
     }
 }
