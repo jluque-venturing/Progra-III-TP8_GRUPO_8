@@ -1,0 +1,31 @@
+USE BDSucursales
+GO
+
+IF OBJECT_ID('spAgregarSucursal', 'P') IS NOT NULL
+    DROP PROCEDURE spAgregarSucursal
+GO
+
+CREATE PROCEDURE spAgregarSucursal
+(
+    @NOMBRESUCURSAL VARCHAR(100),
+    @DESCRIPCIONSUCURSAL VARCHAR(100),
+    @IDPROVINCIASUCURSAL INT,
+    @DIRECCIONSUCURSAL VARCHAR(100)
+)
+AS
+INSERT INTO Sucursal
+(
+    NombreSucursal,
+    DescripcionSucursal,
+    Id_ProvinciaSucursal,
+    DireccionSucursal
+)
+VALUES
+(
+    @NOMBRESUCURSAL,
+    @DESCRIPCIONSUCURSAL,
+    @IDPROVINCIASUCURSAL,
+    @DIRECCIONSUCURSAL
+)
+RETURN
+GO

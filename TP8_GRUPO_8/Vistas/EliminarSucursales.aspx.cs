@@ -36,6 +36,7 @@ namespace TP8_GRUPO_8.Vistas
 
             bool eliminado = negocio.eliminarSucursal(id);
 
+
             if (eliminado)
             {
                 lblMensaje.Text = "La sucursal se ha eliminado con éxito";

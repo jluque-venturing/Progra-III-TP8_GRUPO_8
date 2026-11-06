@@ -81,7 +81,7 @@
                             ForeColor="Red" />
                     </td>
                     <td>
-                        <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" Width="103px" />
+                        <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" OnClientClick="return confirm('¿Está seguro de querer eliminar esta sucursal?');" Width="103px" />
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
