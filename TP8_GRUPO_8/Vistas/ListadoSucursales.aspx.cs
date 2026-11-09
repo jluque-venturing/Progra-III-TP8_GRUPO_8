@@ -23,13 +23,18 @@ namespace TP8_GRUPO_8.Vistas
 
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
-            if (!Page.IsValid) return;
-
+            if (!Page.IsValid)
+            {
+                limpiarCampos();
+                return;
+            }
             NegocioSucursal negocio_Sucursal = new NegocioSucursal();
 
             gvSucursales.DataSource = negocio_Sucursal.getTablaFiltrada(int.Parse(txtIdSucursal.Text));
 
             gvSucursales.DataBind();
+
+            limpiarCampos();
                 
         }
 
@@ -37,6 +42,15 @@ namespace TP8_GRUPO_8.Vistas
         {
             gvSucursales.DataSource = neg.getTabla();
             gvSucursales.DataBind();
+
+            limpiarCampos();
+        }
+
+        private void limpiarCampos()
+        {
+
+            txtIdSucursal.Text = string.Empty;
+
         }
     }
 }
