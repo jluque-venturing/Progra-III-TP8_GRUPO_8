@@ -24,6 +24,11 @@ namespace TP8_GRUPO_8.Vistas
 
         }
 
+        private void LimpiarCampos()
+        {
+            txtIdSucursal.Text = string.Empty;
+        }
+
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
             if (!Page.IsValid)
@@ -45,6 +50,8 @@ namespace TP8_GRUPO_8.Vistas
             {
                 lblMensaje.Text = "No existe una sucursal con ese ID";
             }
+
+            LimpiarCampos();
         }
     }
 }
