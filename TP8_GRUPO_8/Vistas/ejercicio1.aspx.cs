@@ -23,6 +23,14 @@ namespace TP8_GRUPO_8
             }
         }
 
+        private void LimpiarCampos()
+        {
+            txtNombreSucursal.Text = string.Empty;
+            txtDescripcion.Text = string.Empty;
+            txtDireccion.Text = string.Empty;
+            ddlProvincia.SelectedIndex = 0;
+        }
+
         protected void btnAceptar_Click(object sender, EventArgs e) 
         {
            if (!Page.IsValid)
@@ -44,6 +52,7 @@ namespace TP8_GRUPO_8
             if (neg.agregarSucursal(suc))
             {
                 lblMensaje.Text = "La sucursal se ha agregado con exito";
+                LimpiarCampos();
 
             }
 
