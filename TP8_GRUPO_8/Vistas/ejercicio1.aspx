@@ -27,7 +27,7 @@
             </tr>
         </table>
 
-        <h1>GRUPO N°</h1>
+        <h1>GRUPO N° 8</h1>
         <h2>Agregar Sucursal</h2>
 
         <table>

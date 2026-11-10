@@ -51,7 +51,7 @@ namespace TP8_GRUPO_8
 
             if (neg.agregarSucursal(suc))
             {
-                lblMensaje.Text = "La sucursal se ha agregado con exito";
+                lblMensaje.Text = "La sucursal se ha agregado con éxito";
                 LimpiarCampos();
 
             }

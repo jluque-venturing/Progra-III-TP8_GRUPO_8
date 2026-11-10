@@ -19,11 +19,6 @@ namespace TP8_GRUPO_8.Vistas
             }
         }
 
-        protected void txtIdSucursal_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void LimpiarCampos()
         {
             txtIdSucursal.Text = string.Empty;
